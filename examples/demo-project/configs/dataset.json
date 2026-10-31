@@ -1,0 +1,7 @@
+{
+  "dataset": "cat-portraits",
+  "split": "train",
+  "image_dir": "../datasets/raw/images",
+  "annotation_file": "../datasets/raw/labels/cat_001.txt",
+  "output_dir": "../datasets/processed"
+}

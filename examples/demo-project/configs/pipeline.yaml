@@ -1,0 +1,15 @@
+project:
+  name: brick-wall-reconstruction
+  seed: 20261029
+
+input:
+  texture_path: "assets/textures/old_brick_wall.png"
+  mask_path: "assets/masks/brick_mask.png"
+
+output:
+  dir: "outputs/brick-wall"
+  preview: "outputs/brick-wall/preview.png"
+
+dataset_root: "datasets/raw"
+image_dir: "../datasets/raw/images"
+annotation_file: "../datasets/raw/labels/cat_001.txt"

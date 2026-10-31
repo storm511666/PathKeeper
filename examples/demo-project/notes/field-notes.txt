@@ -1,0 +1,9 @@
+# 现场记录 / Field notes
+
+2026-10-29
+- 旧纹理路径：assets/textures/old_brick_wall.png
+- Windows 写法：assets\textures\old_brick_wall.png
+- 参考备份：node_modules/demo-dependency/reference/old_brick_wall_reference.png
+- 构建产物中的旧引用不应被扫描：dist/bundle.js
+
+备注：纹理与法线图必须使用同一套 UV。

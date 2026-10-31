@@ -1,0 +1,12 @@
+{
+  "pipeline": "brick-wall-reconstruction",
+  "version": 2,
+  "texture_path": "assets/textures/old_brick_wall.png",
+  "preview": "../assets/textures/old_brick_wall.png",
+  "normal_map": "assets/textures/old_brick_normal.png",
+  "output_dir": "outputs/brick-wall",
+  "thresholds": {
+    "tile_size": 512,
+    "blend": 0.35
+  }
+}

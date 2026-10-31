@@ -1,0 +1,34 @@
+{
+  "last_node_id": 9,
+  "last_link_id": 12,
+  "nodes": [
+    {
+      "id": 3,
+      "type": "LoadImage",
+      "title": "加载砖墙纹理",
+      "widgets_values": ["old_brick_wall.png", "image"],
+      "properties": {
+        "filename": "old_brick_wall.png",
+        "subfolder": "assets/textures"
+      }
+    },
+    {
+      "id": 4,
+      "type": "CheckpointLoaderSimple",
+      "widgets_values": ["dreamshaper_8.safetensors"]
+    },
+    {
+      "id": 9,
+      "type": "SaveImage",
+      "widgets_values": ["brick-wall-preview"],
+      "properties": {
+        "path": "assets/textures/old_brick_wall.png",
+        "output_dir": "outputs/comfyui"
+      }
+    }
+  ],
+  "links": [],
+  "extra": {
+    "source_workflow": "examples/demo-project/workflows/comfyui_workflow.json"
+  }
+}
