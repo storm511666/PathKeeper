@@ -1,0 +1,53 @@
+{
+  "name": "pathkeeper",
+  "version": "2.1.2",
+  "description": "PathKeeper — a local-first desktop tool for finding and safely repairing hard-coded file path references across mixed code, config, document and workflow projects.",
+  "main": "./out/main/index.js",
+  "author": {
+    "name": "PathKeeper Contributors",
+    "email": "pathkeeper@users.noreply.github.com"
+  },
+  "license": "MIT",
+  "private": false,
+  "engines": {
+    "node": ">=22.12.0"
+  },
+  "keywords": [
+    "path-repair",
+    "refactoring",
+    "electron",
+    "sqlite",
+    "local-first",
+    "developer-tools"
+  ],
+  "scripts": {
+    "dev": "electron-vite dev",
+    "dev:renderer": "vite --config vite.renderer.config.ts",
+    "start": "electron-vite preview",
+    "build": "npm run typecheck && electron-vite build",
+    "typecheck": "tsc --noEmit -p tsconfig.node.json && tsc --noEmit -p tsconfig.web.json",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:e2e": "node tests/e2e/app.e2e.mjs",
+    "dist": "npm run build && electron-builder --win nsis",
+    "dist:portable": "npm run build && electron-builder --win portable",
+    "dist:dir": "npm run build && electron-builder --win --dir"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@types/node": "24.9.1",
+    "@types/react": "19.2.2",
+    "@types/react-dom": "19.2.1",
+    "@vitejs/plugin-react": "5.0.4",
+    "electron": "45.1.0",
+    "electron-builder": "26.18.0",
+    "electron-vite": "5.0.0",
+    "lucide-react": "0.545.0",
+    "playwright-core": "1.64.1",
+    "react": "19.2.0",
+    "react-dom": "19.2.0",
+    "typescript": "5.9.3",
+    "vite": "7.1.12",
+    "vitest": "3.2.4"
+  }
+}

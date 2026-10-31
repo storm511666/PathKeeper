@@ -1,0 +1,49 @@
+appId: io.pathkeeper.app
+productName: PathKeeper
+copyright: Copyright © 2026 PathKeeper Contributors
+
+directories:
+  buildResources: build
+  output: release
+
+files:
+  - out/**/*
+  - package.json
+  - "!**/*.map"
+
+extraResources:
+  - from: examples/beginner-sample
+    to: sample-project
+
+asar: true
+compression: normal
+npmRebuild: false
+
+publish: null
+
+win:
+  icon: build/icon.ico
+  requestedExecutionLevel: asInvoker
+  target:
+    - target: nsis
+      arch:
+        - x64
+    - target: portable
+      arch:
+        - x64
+  artifactName: PathKeeper-${version}-${arch}-setup.${ext}
+
+nsis:
+  oneClick: false
+  perMachine: false
+  allowElevation: true
+  allowToChangeInstallationDirectory: true
+  createDesktopShortcut: true
+  createStartMenuShortcut: true
+  shortcutName: PathKeeper
+  uninstallDisplayName: PathKeeper
+  deleteAppDataOnUninstall: false
+  differentialPackage: false
+
+portable:
+  artifactName: PathKeeper-${version}-portable-${arch}.${ext}
