@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--
+      Strict Content Security Policy. The concrete policy comes from
+      src/renderer/.env.* so development can allow Vite's inline react-refresh
+      preamble while the production build stays strict (script-src 'self').
+    -->
+    <meta http-equiv="Content-Security-Policy" content="%VITE_CSP%" />
+    <meta name="color-scheme" content="dark" />
+    <meta name="referrer" content="no-referrer" />
+    <link
+      rel="icon"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M3.2 18.6V9.1L7.4 4.9h6.9l6.5 6.5v7.2H3.2Z' fill='none' stroke='%23c9a45e' stroke-width='1.4'/%3E%3Cpath d='M3.2 18.6h17.6' stroke='%23c9a45e' stroke-width='1.4'/%3E%3C/svg%3E"
+    />
+    <title>PathKeeper — 路径迁移</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
