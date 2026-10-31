@@ -1,0 +1,6 @@
+{
+  "model_path": "assets/old.png",
+  "cache_dir": "cache/other",
+  "remote_url": "https://example.com/assets/old.png",
+  "notes": "plain text with the old image"
+}

@@ -1,0 +1,3 @@
+model_path: assets/old.png
+output_dir: media/out
+template: ${PROJECT_ROOT}/assets/old.png

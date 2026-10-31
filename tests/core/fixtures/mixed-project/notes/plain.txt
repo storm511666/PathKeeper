@@ -1,0 +1,2 @@
+Copied assets/old.png to the backup folder.
+The other file assets/other.png was left alone.
